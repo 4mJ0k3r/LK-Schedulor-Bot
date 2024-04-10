@@ -21,30 +21,30 @@ SchedulerBot is an advanced Telegram bot built to simplify the scheduling of mes
 
 # Installation Instructions
 
-- ** Step 1: Clone the repository**
+-  Step 1: Clone the repository
 git clone <repository-url>
 cd <repository-directory>
 
-- ** Step 2: Install required Python package**
+-  Step 2: Install required Python package
 pip install telethon
 
-- ** Step 3: Configure the bot**
+-  Step 3: Configure the bot
  Open the scheduler_bot.py file in a text editor of your choice
 and insert your 'api_id', 'api_hash', and 'bot_token' in the designated placeholders.
 
 ## Usage Instructions
 
-- ** To run the bot, execute:**
+- To run the bot, execute
 python scheduler_bot.py
 
 ## Interacting with the Bot in Telegram:
 
-- ** 1. Start the bot in Telegram by sending '/start' to receive instructions.**
+-  1. Start the bot in Telegram by sending '/start' to receive instructions
 
-- ** 2. Set the target channel where messages will be scheduled:**
+-  2. Set the target channel where messages will be scheduled
 /setchannel @channelusername
 
-- ** 3. Define your message scheduling timeline with specific times:**
+- 3. Define your message scheduling timeline with specific times
 /set_timeline 08:00:00, 12:00:00, 16:00:00
 
 ### Now, simply send your messages to the bot, and they will be scheduled according to the timeline you've set.
