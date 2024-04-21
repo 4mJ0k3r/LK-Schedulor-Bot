@@ -133,7 +133,30 @@ async def schedule_message(event):
     # Forward the message with media
     await event.message.forward_to(target_channel)
 
+#This is web section 
+from flask import Flask, request
+import os
 
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "Bot is running!", 200
+
+@app.route('/webhook', methods=['POST'])
+def webhook():
+    update = request.get_json()
+    # Process the update from Telegram here
+    return "Update received", 200
+
+if __name__ == '__main__':
+    # Get the port number from the PORT environment variable (Render sets this variable)
+    port = int(os.environ.get('PORT', 5000))
+    # Host set to '0.0.0.0' to make the Flask app available on all network interfaces
+    app.run(host='0.0.0.0', port=port)
+
+
+#Ende of Web ciode
 def main():
     print("SBot is running...")
     client.run_until_disconnected()
