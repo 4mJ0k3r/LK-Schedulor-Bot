@@ -3,9 +3,9 @@ from datetime import datetime, timedelta
 import asyncio
 import json
 
-api_id = '27653293'
-api_hash = 'ef7e1abf5219cb91597e8aadcba42824'
-bot_token = '7051338088:AAG1_8ZNoz5_oVHbng79kgz8dQXNXdRxqDQ'
+api_id = ''
+api_hash = ''
+bot_token = ''
 
 client = TelegramClient('bot', api_id, api_hash).start(bot_token=bot_token)
 
